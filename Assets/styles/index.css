@@ -28,13 +28,7 @@ margin-bottom: 10px;
 }
 
 p{
-    text-align: center;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: px;
-    display: inline-block;
-    margin-left: 95px;
-    
+    margin-left: 109px;
 }
 
 .header span {
@@ -75,26 +69,28 @@ ul{
     font-size: 14px;
 }
 
- .box{
-    background-color: rgb(134, 69, 69);
-    width: 80px;
-    height: 30px;
-    margin: 0 150px;
-    display: inline-block;
-  
+.line{
+    position: relative; 
+    
 }
-.left{
-    width: 70px;
-    display: inline-flex;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    border: 1px solid black;
+.line::before,
+.line::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  width: 22%;
 }
-.right{
-    width: 70px;
-    display: inline-flex;
-    margin-left: 62%;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    border: 1px solid black;
+.line::before {
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.line::after {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 7px;
+    margin-right: 10px;
+    
 }
